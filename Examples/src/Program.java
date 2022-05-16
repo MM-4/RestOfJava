@@ -53,7 +53,7 @@ public class Program {
 			break;
 		case "abc":
 			System.out.println("case 3: abc");
-		
+			break;
 		case "xyz":
 			System.out.println("case 2: xyz");
 			break;
@@ -62,7 +62,6 @@ public class Program {
 			System.out.println("Unexpected: " + value);
 
 		}
-		System.out.println("hello");
 	}
 
 	public static void demoTernary() {

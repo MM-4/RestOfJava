@@ -38,7 +38,10 @@ public class Program {
 		for (int x = -360; x < 360; x++) {
 			canvas.plot(x, fQuadratic.calcY(x));
 		}
-				
+		
+		MyFunction fLog = (x) -> {
+			return (int) (20 * Math.log(x));
+		};
 
 		// Pause and close the canvas then terminate the program.
 		canvas.pause();
