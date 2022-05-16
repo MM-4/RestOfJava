@@ -27,6 +27,18 @@ public class Program {
 		for (int x = -360; x < 360; x++) {
 			canvas.plot(x, fSin.calcY(x));
 		}
+		
+		MyFunction fQuadratic = (x) -> {
+			return ((x-200) * (x + 200))/250;
+		};
+		
+		canvas.pause();
+		canvas.setColor(Color.blue);
+		
+		for (int x = -360; x < 360; x++) {
+			canvas.plot(x, fQuadratic.calcY(x));
+		}
+				
 
 		// Pause and close the canvas then terminate the program.
 		canvas.pause();
