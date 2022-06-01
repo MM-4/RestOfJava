@@ -71,14 +71,14 @@ public class Program {
 	public static String formatWord(String line) {
 		line = line.toLowerCase();
 		//converts the line to easily readable words
-		line.replace('!', ' ');
-		line.replace(',', ' ');
-		line.replace('.', ' ');
-		line.replace(';', ' ');
-		line.replace('?', ' ');
-		line.replace('(', ' ');
-		line.replace(')', ' ');
-		line.replace(':', ' ');
+		line = line.replace('!', ' ');
+		line = line.replace(',', ' ');
+		line = line.replace('.', ' ');
+		line = line.replace(';', ' ');
+		line = line.replace('?', ' ');
+		line = line.replace('(', ' ');
+		line = line.replace(')', ' ');
+		line = line.replace(':', ' ');
 		return line;
 	}
 
